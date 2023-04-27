@@ -1,0 +1,62 @@
+<meta charset="UTF-8">
+
+
+<h1> EJEMPLOS VAR O LET </h1>
+<h2 style = "color: blue">Usando var o let</h2>
+
+
+<script>
+
+document.write("USANDO VAR"); document.write("<br>");
+var edad = 50;
+document.write(`Edad antes del bloque ${edad}`);
+document.write("<br>");
+
+//se va considerar un bloque al juego de llaves {}
+{
+var edad = 19;
+document.write(`Edad dentro del bloque ${edad}`);
+}
+document.write("<br>");
+document.write(`la edad fuera del bloque: ${edad}`);
+document.write("<br>");
+document.write("<br>");
+
+
+
+/*
+lo que hace el var es el hoisting, eso como si esa edad lo sube una línea encima del bloque
+document.write("USANDO VAR");
+document.write("<br>");
+var edad = 50;
+document.write(`Edad antes del bloque ${edad}`);
+document.write("<br>");
+//se va considerar un bloque al juego de llaves {}
+var edad = 19;
+Aca el var hizo el hoisting, reasignandole el valor a la variable edad en 19, es por eso que fuera del bloque se imprime
+19 y no 50 como se tenía previsto
+{
+document.write(`Edad dentro del bloque ${edad}`);
+}
+document.write("<br>");
+document.write(`la edad fuera del bloque: ${edad}`);
+document.write("<br>");
+document.write("<br>");
+*/
+
+
+
+document.write("USANDO LET");
+document.write("<br>");
+let edadLet = 50;
+document.write(`Edad antes del bloque ${edadLet}`);
+document.write("<br>");
+{
+let edadLet = 19;
+document.write(`Edad dentro del bloque ${edadLet}`);
+}
+document.write("<br>");
+document.write(`la edad fuera del bloque: ${edadLet}`);
+document.write("<br>");
+
+</script>
